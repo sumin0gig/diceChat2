@@ -1,0 +1,21 @@
+{
+  "name": "dicechat",
+  "version": "2.0.0",
+  "description": "Cloudflare Workers에서 서버 없이 돌아가는 디스코드 주사위 슬래시 명령어 봇",
+  "type": "module",
+  "main": "src/worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "register": "node scripts/register.js",
+    "test": "node --test test/*.test.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.0",
+    "wrangler": "^4.0.0"
+  }
+}
